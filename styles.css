@@ -1,0 +1,32 @@
+/*  
+   Styles applied to the entire page  
+---------------------------------------- */
+body {
+    background: #111;          /* Sets the page background color to very dark gray (almost black) */
+    color: white;              /* All text becomes white unless otherwise specified */
+    text-align: center;        /* Centers all inline text and elements inside the body */
+    font-family: Arial, sans-serif; /* Sets the default font for the whole page */
+    padding: 40px;             /* Adds space between the content and the edges of the screen */
+}
+
+
+/*  
+   Styling for the countdown number (the large timer)
+-------------------------------------------------------- */
+#display {
+    font-size: 80px;           /* Makes the countdown numbers very large */
+    margin: 20px 0;            /* Adds space above and below the number */
+    font-weight: bold;         /* Makes the numbers bold for better visibility */
+}
+
+
+/*  
+   Styling for all buttons on the page  
+------------------------------------------- */
+button {
+    padding: 15px 40px;        /* Makes the button larger: 
+                                  15px top/bottom, 40px left/right inside the button */
+    font-size: 20px;           /* Larger text inside the button */
+    cursor: pointer;           /* Mouse cursor becomes a pointer (hand icon) */
+    margin-top: 20px;          /* Adds space above the button */
+}

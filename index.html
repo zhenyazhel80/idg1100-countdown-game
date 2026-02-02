@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Sets the character encoding so text displays correctly -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title shown in the browser tab -->
+    <title>Countdown Game</title>
+
+    <!-- Links the CSS file that controls the visual appearance -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- Static heading shown to the user -->
+<h1>Countdown Game</h1>
+
+<!-- 
+This div shows the countdown timer.
+JavaScript selects this element using:
+document.getElementById("display")
+and updates its text content every 10 milliseconds.
+-->
+<div id="display">5.000</div>
+
+<!-- 
+This button allows the user to stop the countdown.
+JavaScript listens for click events on this button using:
+stopBtn.addEventListener("click", stopCountdown)
+-->
+<button id="stopBtn">STOP</button>
+
+<!-- Section title for the statistics -->
+<h2>Statistics</h2>
+
+<!-- 
+The span elements inside the paragraphs are updated dynamically by JavaScript.
+JavaScript modifies their text using .textContent when the game is stopped.
+-->
+<p>Total tries: <span id="tries">0</span></p>
+<p>Average deviation: <span id="average">0.000</span> sec</p>
+<p>Best result: <span id="best">—</span></p>
+
+<!-- 
+The JavaScript file is loaded at the bottom so that
+all HTML elements exist before JavaScript tries to access them.
+This script:
+- listens for user events (clicks and key presses)
+- updates the timer
+- calculates statistics
+- modifies the HTML dynamically
+-->
+<script src="script.js"></script>
+
+</body>
+</html>
